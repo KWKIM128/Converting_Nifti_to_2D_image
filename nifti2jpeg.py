@@ -4,7 +4,7 @@ import os
 from PIL import Image
 from tqdm import tqdm
 
-def nifti2jpeg(in_path, num_slices, out_path):
+def nifti2jpeg(in_path, num_slices, out_path, png=False):
     """
     This function converts one nifti to jpeg series
     
@@ -13,6 +13,10 @@ def nifti2jpeg(in_path, num_slices, out_path):
         nun_slices: number of slices in the scan
         out_path: path to output
     """
+    if png:
+        file_format = '.png'
+    else:
+        file_format = '.jpeg'
 
     nifti_name = os.path.basename(in_path).split(".")[0] # gets name of the nifti file
     
@@ -26,4 +30,4 @@ def nifti2jpeg(in_path, num_slices, out_path):
         name = nifti_name + '_' + str(i)
         image = Image.fromarray(nifti_arr[:,:,i])
     
-        image.save(out_path + '/' + name + '.jpeg')
+        image.save(out_path + '/' + name + file_format)
