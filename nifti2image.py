@@ -6,7 +6,7 @@ from tqdm import tqdm
 
 def nifti2image(in_path, num_slices, out_path, png=False):
     """
-    This function converts one nifti to jpeg series
+    This function converts one nifti to jpeg/png series
     
     Input Parameter:
         in_path: path to nifti file
