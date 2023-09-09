@@ -1,7 +1,7 @@
 # Converting_Nifti_to_2D_jpeg_file
 Converts Nifti files to jpeg or png file
 
-The function nifti2image converts nifti file to jpeg/png series
+The function nifti2image converts nifti file to jpeg/png series.
 To use, 3 parameters are required.
 
 in_path: path to nifti file
