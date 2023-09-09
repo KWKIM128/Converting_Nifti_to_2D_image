@@ -28,6 +28,5 @@ def nifti2image(in_path, num_slices, out_path, png=False):
     
     for i in tqdm(range(num_slices)):
         name = nifti_name + '_' + str(i)
-        image = Image.fromarray(nifti_arr[:,:,i])
-    
+        image = Image.fromarray(nifti_arr[:,:,i])    
         image.save(out_path + '/' + name + file_format)
