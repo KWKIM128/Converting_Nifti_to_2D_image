@@ -10,7 +10,7 @@ num_slices: number of slices in the scan. This can be checked using medical imag
 
 out_path: path to output.
 
-Nifti will be saved as jpeg file as default. If you wish to save it as png file format, just simply put png=True as your fourth parameter.
+Nifti will be saved as a jpeg file as default. If you wish to save it as a png file format, simply put png=True as your fourth parameter.
 
 Example result:
 <p align="center">
