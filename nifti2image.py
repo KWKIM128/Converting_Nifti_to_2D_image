@@ -4,7 +4,7 @@ import os
 from PIL import Image
 from tqdm import tqdm
 
-def nifti2image(in_path, num_slices, out_path, png=False):
+def mask_nifti2image(in_path, num_slices, out_path, png=False):
     """
     This function converts one nifti to jpeg/png series
     
