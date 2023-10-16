@@ -6,7 +6,7 @@ To use, 3 parameters are required.
 
 in_path: path to nifti file
 
-num_slices: number of slices in the scan. This can be checked using medical imaging softwares like 3dslicer or ITKsnap
+num_slices: number of slices in the scan. This can be checked using medical imaging softwares like Slicer or ITKsnap
 
 out_path: path to output.
 
